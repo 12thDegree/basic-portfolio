@@ -1,0 +1,88 @@
+/* keeps padding and borders inside defined box edges. Margins affect outside the box defined */
+/* Universal Box Sizing with Inheritance */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* HTML SINGLES EVENT*/
+/*  * Teal color (used for headings and backgrounds): `#4aaaa5` */
+h1,h2,h3 {
+    /* background: #4aaaa5; */
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    text-align: left;
+}
+h1 {
+    float: left;
+}
+/* style the nav bar links in one line, no decorations, and the Pip's between items
+makes the lines between the links in the nav bar */
+ul
+{
+    margin: 0;
+    padding: 0;
+    float: right;
+    text-align: center;
+}
+ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+li:not(:first-child):before {
+    content: " | ";
+}
+
+/* HTML DOCUMENT SECTIONS */
+body {
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+    /* background-color: #ebebeb; */
+    /* background-color: #663366; */
+    background-image: "./Assets/images/bg-img.jpg";
+    margin: 0 auto;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+    #header {
+        /* width: 100%; */
+        padding-top: 1%;
+        /* background-color:#ffffff; */
+        border: #cccccc;
+        overflow: hidden;
+    }
+        
+        /* contain nav links inside to stay same width as ABOUT ME, but keeps the header background screen-wide*/
+        #navbar {
+            width: 960px; 
+            height: 100%;
+            margin: auto;
+            background-color: teal;
+        }
+            #logo {
+                    background-color: #4aaaa5;
+                }
+    #main {
+        width: 960px;
+        height: 540px;
+        margin: auto;  
+        margin-top: 3%;
+        background-color: #dddddd;
+    }
+    #footer {
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+        padding-top: 1%;
+        border-top: 5px solid #4aaaa5;
+        background-color: #666666;
+        color: silver;
+        /* class chat fixed not absolute... need a position of relative in the parent */
+        position: fixed;
+        bottom: 0;
+    }
+
+

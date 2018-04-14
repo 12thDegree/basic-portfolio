@@ -1,0 +1,112 @@
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+Body {
+    position: relative; /* position relative is for the sticky footer */
+    margin: 0;
+    padding-bottom: 6rem;
+    height: 100%;
+}
+/* All the cool kids wrap the entire thingie in a wrapper thing */
+/* #Wrapper {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+} */
+header {
+    height: 10%;
+    background: gold;
+    margin-bottom: 3%;
+}
+    nav {
+            width: 960px;
+            height: 100%;
+            /* background-color: aqua; */
+            margin: auto;
+        }
+            #minihead {
+                height: 100%;
+                width: 30%;
+                background: black;
+                float: left;
+            }
+            #navright {
+                height: 100%;
+                width: 25%;
+                background: black;
+                float: right;
+            }
+main {
+    width: 960px;
+    height: 540px;
+    margin: 0 auto;
+    /* padding: ; */
+    padding-inline-start: 5%;
+    background-color: teal;
+    overflow: hidden;
+}
+footer {
+    height: 10%;
+    background: gold;
+    margin-top: 3%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* padding: 1rem; */
+    /* text-align: center; */
+}
+
+/* PORTFOLIO PAGE */
+.gridbox {
+    display: grid;
+    height: 80%;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    /* background-color: #2196F3; */
+    padding: 0;
+}
+.grid-item {
+    height: 85%;
+    width: 300px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    /* padding: 20px; */
+    padding-top: 40%;
+    font-size: 30px;
+    text-align: center;
+  }
+
+/* It's the little things that truly make a difference */
+h1 {
+    padding-left: 5%;
+}
+
+/* EMAIL FORM */
+#contact {
+    width: 60%;
+    float: left;
+}
+#message-box {
+    height: 80px;
+    width: 85%;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+#social {
+    height: 35%;
+    width: 25%;
+    float: right;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}

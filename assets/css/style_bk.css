@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	padding: 0;
+    background-color:red;
+} 
+
+#wrapper {
+    background-color:darkolivegreen;
+}
+  /* Need a background image? and a colour for the  <section> bio paragrph*/
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden; /*contain child floats in modern browsers*/
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    border: #cccccc;
+    border-width: 2px;
+    background-color: #ffffff
+  }
+    /* Style the header links */
+    .header a {
+        float: left;
+        color: gray;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px; 
+        line-height: 25px;
+    }
+    /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+    .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        background-color: teal;
+    }
+    /* Change the font color on mouse-over */
+    .header a:hover {
+        color: darkgray;
+    }
+    /* Style the active/current link*/
+    .header a.active {
+        color: teal;
+    }
+    /* Float the link section to the right */
+    .header-right {
+        float: right;
+    }
+    /* end of internet copy paste */
+
+  /* main section */
+.Main {
+    width: 960px;
+    margin: 100 auto;
+    padding: 20px 10px;
+    background-color:#ffffff;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+h2 {
+    padding: 5px 0;
+    margin: 10;
+    font-size: 28pt;
+    text-align: left;
+    color: teal;
+}
+
+
+.img {
+        margin: 10px;
+}
